@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thefonso/PERN-async-await,
+    "url": "https://github.com/thefonso/PERN-async-await",
     "directory": "/back-end"
   },
   "scripts": {
