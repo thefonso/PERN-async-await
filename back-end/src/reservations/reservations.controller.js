@@ -104,8 +104,12 @@ function validDate(req) {
 // if people value is not an integer or less than 1, return an error message
 function peopleIsValid(req) {
   const { people } = req.body.data
-  if (!Number.isInteger(people) || people < 1) {
+  console.log("PEOPLEISVALID: ",typeof people)
+  if (people < 1) {
     return "You cannot make a reservation for 0 people."
+  }
+  if (!Number.isInteger(people)){
+    return "people"
   }
   return false
 }
@@ -148,6 +152,7 @@ function validStatus(req, res, next) {
 
 // if reservation doesn't exist, send a 404 response with a message saying the reservation doesn't exist.
 async function reservationExists(req, res, next) {
+  console.log("RESERVATIONEXISTS called")
   const { reservation_id } = req.params;
   const foundRes = await service.read(reservation_id)
 

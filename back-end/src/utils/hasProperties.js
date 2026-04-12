@@ -5,6 +5,7 @@
  * @returns A function that takes in a response, request, and next function.
  */
  function hasProperties(properties) {
+  console.log("HASPROPERTIES called",properties)
     return function (res, req, nxt) {
       const { data = {} } = res.body;
       properties.forEach((property) => {
