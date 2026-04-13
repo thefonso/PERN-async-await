@@ -1,6 +1,7 @@
 # Dinner Reservation
 
-Live app: https://thefonso-cafe.onrender.com/dashboard
+Live front-end: https://thefonso-cafe.onrender.com/dashboard
+Live back-end: https://dinner-reservation-back-end.onrender.com
 
 ## Description
 
